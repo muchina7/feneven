@@ -221,6 +221,10 @@ header {
     text-align: center;
     margin: 1rem 0;
 }
+.product-box:hover .btn.view-details {
+    transform: translateX(-50%);
+    /* Keep the button in place */
+}
 
 /* Contact Section */
 .contact {
