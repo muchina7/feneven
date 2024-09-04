@@ -225,38 +225,6 @@ header {
     transform: translateX(-50%);
     /* Keep the button in place */
 }
-/* Responsive Design for Mobile */
-@media (max-width: 768px) {
-    .product-box {
-        width: 100%;
-        height: auto;
-        perspective: none;
-    }
-
-    .product-front, .product-back {
-        position: relative;
-        width: 100%;
-        height: auto;
-        transform: none;
-        backface-visibility: visible;
-    }
-
-    /* Remove Hover Flip Effect on Mobile */
-    .product-box:hover .product-front,
-    .product-box:hover .product-back {
-        transform: none;
-    }
-
-    /* Ensure the button is still centered */
-    .btn.view-details {
-        position: static;
-        margin-top: 10px;
-        transform: none;
-        text-align: center;
-        display: block;
-    }
-}
-
 /* Contact Section */
 .contact {
     padding: 4rem 2rem;
