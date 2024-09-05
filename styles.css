@@ -60,17 +60,17 @@ header {
 .home {
     padding: 2rem; /* Account for the fixed header */
     display: flex;
-    /*flex-direction: column;*/
     align-items: center;
-    /*text-align: center;*/
     background: url('home.png') no-repeat center center/cover;
     color: #fff;
     height: 100vh;
     justify-content: space-between;
 }
+
 .home-text {
     max-width: 50%;
 }
+
 .home-text h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -143,7 +143,6 @@ header {
     padding: 4rem 2rem;
     text-align: center;
     background-color: #fff;
-    
 }
 
 .main-text h2 {
@@ -158,8 +157,6 @@ header {
 
 .products-content {
     display: flex;
-    /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
-    /*gap: 20px;*/
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -207,7 +204,7 @@ header {
 }
 
 .product-box:hover .product-back {
-    transform: rotateY(0deg); /* Corrected flip effect */
+    transform: rotateY(0deg);
 }
 
 .product-front img {
@@ -220,6 +217,28 @@ header {
 .product-front h3, .product-back h3, .product-back p {
     text-align: center;
     margin: 1rem 0;
+}
+
+/* View Details Button as Dummy Button */
+.view-details {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ff5722; /* Same color as other buttons */
+    background: none; /* No background */
+    border-radius: 50px; /* Rounded corners */
+    border: 2px solid #ff5722; /* Border to make it look like a button */
+    cursor: default; /* Make it look non-clickable */
+    transition: all 0.3s ease;
+}
+
+.view-details:hover,
+.view-details:focus {
+    color: #e64a19; /* Change color on hover */
+    border-color: #e64a19; /* Change border color on hover */
 }
 
 /* Contact Section */
