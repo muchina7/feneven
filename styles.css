@@ -57,20 +57,6 @@ header {
 }
 
 /* Home Section */
-.home {
-    padding: 2rem; /* Account for the fixed header */
-    display: flex;
-    align-items: center;
-    background: url('home.png') no-repeat center center/cover;
-    color: #fff;
-    height: 100vh;
-    justify-content: space-between;
-}
-
-.home-text {
-    max-width: 50%;
-}
-
 .home-text h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -78,42 +64,25 @@ header {
 
 .home-text h2 {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .home-text p {
-    font-size:1.2rem;
     margin-bottom: 2rem;
 }
 
-.btn {
-    display: inline-block;
+.home .btn {
+    background-color: #ff5722;
+    color: #fff;
     padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
     text-decoration: none;
-    color: #fff;
-    background: #ff5722; /* Vibrant color for the button */
-    border-radius: 50px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background 0.3s ease;
 }
 
-.btn:hover,
-.btn:focus {
-    background: #e64a19; /* Slightly darker color on hover */
-    color: #fff;
-    border-color: #ff5722;
-    transform: translateY(-2px); /* Lift effect */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.btn:active {
-    background: #d84315; /* Darker shade when button is pressed */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transform: translateY(1px); /* Pressed effect */
+.home .btn:hover {
+    background-color: #e64a19;
 }
 
 /* Marquee Images */
