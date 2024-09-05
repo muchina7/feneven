@@ -59,17 +59,20 @@ header {
 /* Home Section */
 .home {
     padding: 2rem; /* Account for the fixed header */
-    display: flex;
+    display:flex;
     align-items: center;
+    flex-direction:column;
     background: url('home.png') no-repeat center center/cover;
     color: #fff;
-    height: 100vh;
-    justify-content: space-between;
+    height: 140vh;
+    justify-content: center;
+    text-align: center;
 }
 
 .home-text {
     max-width: 50%;
 }
+
 .home-text h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -81,21 +84,38 @@ header {
 }
 
 .home-text p {
+    font-size:1.2rem;
     margin-bottom: 2rem;
 }
 
-.home .btn {
-    background-color: #ff5722;
-    color: #fff;
+.btn {
+    display: inline-block;
     padding: 10px 20px;
-    text-decoration: none;
+    font-size: 1rem;
     font-weight: bold;
-    border-radius: 50px;
-    transition: background 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: #ff5722; /* Vibrant color for the button */
+    border-radius: 50px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
 }
 
-.home .btn:hover {
-    background-color: #e64a19;
+.btn:hover,
+.btn:focus {
+    background: #e64a19; /* Slightly darker color on hover */
+    color: #fff;
+    border-color: #ff5722;
+    transform: translateY(-2px); /* Lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+    background: #d84315; /* Darker shade when button is pressed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px); /* Pressed effect */
 }
 
 /* Marquee Images */
@@ -285,4 +305,39 @@ footer {
 .back-to-top:hover {
     background: #3498db;
     color: #fff;
+}
+@media screen and (max-width: 768px) {
+    header {
+        padding: 1rem; /* Adjust header padding */
+    }
+
+    .navbar {
+        display: none; /* Optionally hide navbar on mobile */
+    }
+
+    .home-text h1 {
+        font-size: 2rem; /* Adjust font sizes */
+    }
+
+    .home-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .product-box {
+        width: calc(50% - 2rem); /* Two products per row */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home-text h1 {
+        font-size: 1.8rem; /* Smaller font sizes for smaller screens */
+    }
+
+    .home-text h2 {
+        font-size: 1.3rem;
+    }
+
+    .product-box {
+        width: 100%; /* Full-width products on small screens */
+    }
 }
