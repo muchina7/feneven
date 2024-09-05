@@ -131,7 +131,7 @@ header {
 
 .marquee-images {
     display: inline-block;
-    animation: marquee 15s linear infinite;
+    animation: marquee 20s linear infinite;
 }
 
 .marquee-images img {
@@ -140,9 +140,12 @@ header {
 }
 
 @keyframes marquee {
-    from { transform: translateX(100%); }
-    to { transform: translateX(-100%); }
+    0% { transform: translateX(100%); } /* Start off-screen */
+    10% { transform: translateX(50%); } /* Quickly come into view */
+    100% { transform: translateX(-1000%); } /* Slowly scroll across */
+    100% { transform: translateX(-100%); } /* End off-screen */
 }
+
 
 /* Products Section */
 .products {
