@@ -57,6 +57,19 @@ header {
 }
 
 /* Home Section */
+.home {
+    padding: 2rem; /* Account for the fixed header */
+    display: flex;
+    align-items: center;
+    background: url('home.png') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.home-text {
+    max-width: 50%;
+}
 .home-text h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
